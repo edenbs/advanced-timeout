@@ -1,0 +1,35 @@
+{
+  "name": "advanced-timeout",
+  "version": "1.0.0",
+  "description": "An advanced, pausable, timeout module for javascript",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "clean": "rimraf dist && mkdir dist",
+    "build": "npm run clean && babel lib -d dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edenbs/advanced-timeout.git"
+  },
+  "keywords": [
+    "timeout",
+    "pause",
+    "settimeout"
+  ],
+  "author": "Eden Ben Shoshan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edenbs/advanced-timeout/issues"
+  },
+  "homepage": "https://github.com/edenbs/advanced-timeout#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "rimraf": "^2.6.3"
+  },
+  "files": ["dist"]
+}
