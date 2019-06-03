@@ -8,7 +8,7 @@
   },
   "scripts": {
     "clean": "rimraf dist && mkdir dist",
-    "build": "npm run clean && babel lib -d dist/"
+    "build": "npm run clean && babel src -d dist/"
   },
   "repository": {
     "type": "git",
