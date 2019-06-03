@@ -35,5 +35,10 @@
     "@babel/preset-env": "^7.4.5",
     "rimraf": "^2.6.3"
   },
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
 }
