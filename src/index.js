@@ -54,3 +54,15 @@ module.exports.clear = key => {
 
     return true;
 };
+
+module.exports.getRemainingTime = key => {
+    if (!timeouts[key]) {
+        return;
+    }
+
+    if (timeouts[key].isPaused) {
+        return timeouts[key].remainingTime;
+    }
+
+    return timeouts[key].remainingTime - (Date.now() - timeouts[key].startTime);
+};
